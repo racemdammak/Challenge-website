@@ -84,6 +84,21 @@ nav ul li a{
     left: -5%;
 }
 
+nav label{
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+}
+
+label .menu_btn,
+label .close_btn{
+    display: none;
+}
+
+#click{
+    display: none;
+}
+
 .hero_section{
     margin-top: 100px;
     background: var(--primary-color);
@@ -331,6 +346,30 @@ footer img{
         width: max-content;
         padding: 0 5%;
     }
+    .hero_container{
+        padding-top: 8%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hero_container img{
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 80%;
+    }
+    .hero_container .text_section{
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+    nav .nav_logo{
+        display: flex;
+        justify-content:center;
+        position: relative;
+        left: -25%;
+    }
     nav ul li{
         padding: 10px;
     }
@@ -351,25 +390,61 @@ footer img{
     }
     .team{
         width: max-content;
-        padding: 0 5%;  
+        padding: 0 5%;
     }
     .team_container{
         flex-direction: column;
-        padding: 5% 0;
+        padding-bottom: 5%;
     }
     .gallery{
         width: max-content;
         padding: 0 5%;
     }
     .gallery_container{
-        flex-direction: row;
         padding: 2% 0;
     }
     .contact{
         width: max-content;
         padding: 5% 5%;
+        padding-bottom: 15%;
     }
     footer{
         display: none;
+    }
+    label .menu_btn{
+        display: block;
+    }
+    nav ul{
+        display: block;
+        background-color: white;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: all 0.4s ease;
+    }
+    #click:checked ~ ul{
+        left: 0;
+    }
+
+    #click:checked ~ label .close_btn{
+        display: block;
+    }
+
+    #click:checked ~ label .menu_btn{
+        display: none;
+    }
+
+    nav ul li{
+        display: block;
+        padding: 8px 12px;
+        width: 12%;
+        margin: 24px auto;
+    }
+
+    nav ul li a{
+        color: #1b1b1b;
     }
 }
