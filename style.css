@@ -333,7 +333,7 @@ footer img{
     color: #E65C19;
     transform: scale(1.3);
 }
-@media screen and (max-width:1024px){
+/*@media screen and (max-width:1024px){
     header{
         width: max-content;
         padding: 0 20%;
@@ -446,5 +446,242 @@ footer img{
 
     nav ul li a{
         color: #1b1b1b;
+    }
+}*/
+@media screen and (max-width: 1024px) {
+    header{
+        width: 100%;
+        padding: 0 5%;
+    }
+    nav{
+        width: 100vh;
+    }
+    .hero_section {
+        height: auto;
+        width: max-content;
+        padding: 0 5%;
+    }
+
+    .hero_container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero_container .image_section {
+        max-width: 100%;
+    }
+
+    .hero_container .image_section img {
+        width: 100%;
+    }
+    
+    .about_us{
+        width: max-content;
+        padding: 0 5%;
+    }
+
+    .about_container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about_container .text_section {
+        max-width: 100%;
+    }
+
+    .team .team_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery .gallery_container {
+        flex-direction: column;
+    }
+
+    .contact_container {
+        flex-direction: column;
+    }
+
+    footer .footer_section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav label .menu_btn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 100px);
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked ~ ul {
+        display: flex;
+    }
+
+    #click:checked ~ label .close_btn {
+        display: block;
+    }
+
+    #click:checked ~ label .menu_btn {
+        display: none;
+    }
+
+    nav ul li {
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    .about_us{
+        width: max-content;
+        padding: 0 5%;
+    }
+    .team{
+        width: max-content;
+        padding: 0 5%;
+    }
+    .gallery{
+        width: max-content;
+        padding: 0 5%;
+    }
+    .contact {
+        width: max-content;
+        padding: 0 5%;
+        padding-bottom: 10%;
+    }
+    footer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav .nav_logo h2 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    .hero_container .text_section h2 {
+        font-size: 32px;
+    }
+
+    .hero_container .text_section h3 {
+        font-size: 28px;
+    }
+
+    .hero_container .text_section p {
+        font-size: 18px;
+    }
+
+    .about_container .text_section p {
+        font-size: 16px;
+    }
+
+    footer{
+        display: block;
+        width: max-content;
+        padding: 0 5%;
+    }
+
+    .footer_section .follow_us a,h3{
+        display: none;
+    }
+    .about_us{
+        width: max-content;
+        padding: 0 5%;
+    }
+    .team{
+        width: max-content;
+        padding: 0 5%;
+        padding-bottom: 9%;
+    }
+    .gallery{
+        width: max-content;
+        padding: 0 5%;
+    }
+    .contact {
+        width: max-content;
+        padding: 0 5%;
+        padding-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        height: 80px;
+    }
+
+    .hero_section {
+        margin-top: 80px;
+    }
+
+    .hero_container .text_section h2 {
+        font-size: 24px;
+    }
+
+    .hero_container .text_section h3 {
+        font-size: 20px;
+    }
+
+    .hero_container .text_section p {
+        font-size: 16px;
+    }
+
+    .about_container .text_section p {
+        font-size: 14px;
+    }
+
+    .team{
+        padding-bottom: 2%;
+    }
+
+    nav .nav_logo h2 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        padding: 8px;
+    }
+    .gallery{
+        display: block;
+    }
+    .footer_section{
+        padding-top: 2%;
+    }
+    .footer_section .footer_logo{
+        width: max-content;
+        font-size: 30px;
+    }
+    .footer_section .footer_logo img{
+        width: 10%;
+    }
+    .footer_section .useful_links{
+        width: max-content;
+        font-size: 40px;
+        padding: 0% 5%;
+    }
+
+    .footer_section .follow_us a,h3{
+        display: none;
     }
 }
